@@ -5,69 +5,75 @@
     <title>Welcome</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.png?v=2">
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png?v=2">
-    <link rel="manifest" href="./resources/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="./resources/favicons/site.webmanifest">
     <!-- tailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Google Font: Oswald -->
+    <link href="./resources/styles/index.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./resources/favicon/favicon.ico" class="h-8" alt="RL Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ruikang Lin</span>
-            </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Projects</button>
-                <button data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-cta" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
+<body class="w-screen h-screen bg-[#FCF6F5FF] overflow-hidden">
+    <div class="absolute left-0 top-0 w-2/5 h-screen bg-[#89ABE3FF] -z-10"></div>
+    <div class="w-full h-full flex justify-center content-center">
+        <div class="grid grid-cols-2 gap-6 items-center">
+            <div class="max-w-sm h-fit bg-white border border-gray-200 rounded-r-lg md:rounded-lg shadow text-center">
+                <img class="rounded-full w-2/3 mx-auto mt-12 bg-gradient-to-tr from-[#89ABE3FF] to-white"
+                    src="./resources/images/profile-clean.png" alt="Profile Picture" />
+                <div class="md:p-3 p-5">
+                    <h5 class="text-4xl font-bold tracking-wide text-gray-900">Ruikang</h5>
+                    <h5 class="text-4xl font-bold tracking-wide text-gray-900">Lin</h5>
+                    <div class="my-4 w-full flex justify-center">
+                        <div class="border-b-8 border-[#89ABE3FF] w-1/6"></div>
+                    </div>
+                    <p class="text-2xl font-normal tracking-widest text-gray-700">STUDENT</p>
+                </div>
+                <div class="mb-6">
+                    <button type="button" onclick="location.href='https://github.com/RuikangRPI';"
+                        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 shadow-md shadow-[#24292F]/50 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center me-2">
+                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button type="button" onclick="location.href='https://www.linkedin.com/in/ruikanglin/';"
+                        class="text-white bg-[#0077B5] hover:bg-[#0077B5]/90 shadow-md shadow-[#0077B5]/50 focus:ring-4 focus:outline-none focus:ring-[#0077B5]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center me-2">
+                        <svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                <ul
-                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                    </li>
-                </ul>
+            <div>
+                <h1 class="text-7xl font-bold tracking-widest text-gray-900">Hi!</h1>
+                <h2 class="text-7xl font-semibold tracking-normal text-gray-900">I'm Ruikang.</h2>
+                <h2 class="text-4xl font-normal tracking-normal text-gray-900 my-6">Description Description</h2>
+                <div class="mb-4 ml-4">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-7 py-4 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Portfolio
+                    </button>
+                    <button type="button"
+                        class="ml-2 py-4 px-7 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        Stats
+                    </button>
+                </div>
+                <div class="max-w-sm animate-pulse">
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nulla eget justo scelerisque malesuada vel nec eros.</p>
+                    <p>Maecenas varius, nisl eu eleifend luctus, purus nisl convallis dui, non aliquam ante elit at tortor.</p>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-
-
-    <p>Hello World! from Ruikang Lin</p>
-    <img src="./resources/images/profile.jpeg" alt="Profile Picture" />
-    <div id="root"></div>
-
-    <!-- <script src="./resources/scripts/index.js"></script> -->
     <!-- flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>

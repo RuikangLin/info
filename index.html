@@ -18,12 +18,12 @@
 
 </head>
 
-<body class="w-screen h-screen bg-[#FCF6F5FF] overflow-hidden">
+<body class="w-screen h-screen bg-[#FCF6F5FF] md:overflow-hidden">
     <div class="absolute left-0 top-0 w-2/5 h-screen bg-[#89ABE3FF] -z-10"></div>
     <div class="w-full h-full flex justify-center content-center">
         <div class="grid grid-cols-2 gap-6 items-center">
-            <div class="max-w-sm h-fit bg-white border border-gray-200 rounded-r-lg md:rounded-lg shadow text-center">
-                <img class="rounded-full w-2/3 mx-auto mt-12 bg-gradient-to-tr from-[#89ABE3FF] to-white"
+            <div id="profile_card" class="max-w-sm h-fit bg-white border border-gray-200 rounded-r-lg md:rounded-lg shadow text-center">
+                <img id="profile_pic" class="rounded-full w-2/3 mx-auto mt-12 bg-gradient-to-tr from-[#89ABE3FF] to-white"
                     src="./resources/images/profile-clean.png" alt="Profile Picture" />
                 <div class="md:p-3 p-5">
                     <h5 class="text-3xl md:text-4xl font-bold tracking-wide text-gray-900">Ruikang</h5>
@@ -31,11 +31,11 @@
                     <div class="my-4 w-full flex justify-center">
                         <div class="border-b-8 border-[#89ABE3FF] w-1/6"></div>
                     </div>
-                    <p class="text-xl md:text-2xl font-normal tracking-widest text-gray-700">STUDENT</p>
+                    <p class="text-xl md:text-2xl font-normal tracking-wide text-gray-700 underline-offset-2">CS & ITWS <a href="https://www.rpi.edu/" class="hover:underline"><b>@ RPI</b></a></p>
                 </div>
                 <div class="mb-6">
                     <button type="button" onclick="location.href='https://github.com/RuikangRPI';"
-                        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 shadow-md shadow-[#24292F]/50 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center me-2">
+                        class="me-2 transition-all text-white bg-[#24292F] hover:bg-[#24292F]/90 shadow-md shadow-[#24292F]/50 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -44,7 +44,7 @@
                         </svg>
                     </button>
                     <button type="button" onclick="location.href='https://www.linkedin.com/in/ruikanglin/';"
-                        class="text-white bg-[#0077B5] hover:bg-[#0077B5]/90 shadow-md shadow-[#0077B5]/50 focus:ring-4 focus:outline-none focus:ring-[#0077B5]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center me-2">
+                        class="transition-all text-white bg-[#0077B5] hover:bg-[#0077B5]/90 shadow-md shadow-[#0077B5]/50 focus:ring-4 focus:outline-none focus:ring-[#0077B5]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
                         <svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -53,16 +53,16 @@
                 </div>
             </div>
             <div>
-                <h1 class="text-3xl md:text-7xl font-bold tracking-wide md:tracking-widest text-gray-900">Hi!</h1>
-                <h2 class="text-3xl md:text-7xl font-semibold tracking-normal text-gray-900">I'm Ruikang.</h2>
-                <h2 class="text-lg md:text-4xl font-normal tracking-normal text-gray-900 my-6">Description Description</h2>
-                <div class="mb-4 ml-4">
+                <h1 class="text-3xl md:text-6xl font-extrabold tracking-wide md:tracking-widest text-gray-900">Hi!</h1>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-normal text-gray-900">I'm Ruikang.</h2>
+                <h3 class="max-w-sm text-lg md:text-2xl font-normal tracking-normal text-gray-900 my-6">I'm a Full-Stack Developer and an Open Source Software Contributor.</h3>
+                <div class="mb-6 ml-4">
                     <button type="button"
-                        class="px-4 py-2.5 md:px-7 md:py-4 me-2 mb-2 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm text-center">
+                        class="px-4 py-2.5 md:px-7 md:py-4 me-2 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm text-center">
                         Portfolio
                     </button>
                     <button type="button"
-                        class="px-4 py-2.5 md:px-7 md:py-4 ml-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+                        class="px-4 py-2.5 md:px-7 md:py-4 ml-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
                         Stats
                     </button>
                 </div>

@@ -3,18 +3,66 @@
 } */
 
 #profile_pic {
-    background-size: 200% 100%;
+    background-size: 300% 100%;
 	animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
 	0% {
-		background-position: 50% 50%;
+		background-position: 0% 50%;
 	}
 	50% {
 		background-position: 100% 50%;
 	}
 	100% {
-		background-position: 50% 50%;
+		background-position: 0% 50%;
+	}
+}
+
+/* #view_work_btn {
+	background: rgb(137,171,227);
+	background: linear-gradient(228deg, rgb(211, 228, 255, 1) 0%, rgba(137,171,227,1) 100%);
+} */
+
+#tab_indicator {
+	background: rgb(137,171,227);
+	background: linear-gradient(228deg, rgb(211, 228, 255, 1) 0%, rgba(137,171,227,1) 100%);
+}
+
+/*
+Glowing Corner Effect Inspiration
+https://www.youtube.com/watch?v=CJ26NLtdzPA
+*/
+#tab_indicator::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	background: radial-gradient(rgba(255, 255, 255), transparent, transparent);
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: 0.5s, top 0s, left 0s;
+	animation: shine 6s ease-in infinite;
+}
+
+#tab_indicator::after {
+	content: "";
+	position: absolute;
+	inset: 2px;
+	border-radius: 9999px;
+	background: linear-gradient(228deg, rgb(211, 228, 255, 0.5) 0%, rgba(137,171,227,0.5) 100%);
+}
+
+@keyframes shine {
+	0% {
+		left: -40%;
+	}
+	70% {
+		left: 140%;
+	}
+	100% {
+		left: 140%;
 	}
 }

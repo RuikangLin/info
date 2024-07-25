@@ -9,8 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png?v=2">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png?v=2">
     <link rel="manifest" href="./resources/favicons/site.webmanifest">
-    <!-- Search Result - Description -->
-    <meta name="description" content="Hi! I'm Ruikang Lin. Click to learn more about me, my projects, and my achievements.">
     <!-- Search Result - Site Name -->
     <script type="application/ld+json">
         {
@@ -19,22 +17,31 @@
           "name" : "Ruikang Lin",
           "url" : "https://ruikanglin.net/"
         }
-      </script>
-      </head>
+    </script>
+    <!-- Search Result - Description -->
+    <meta name="description"
+        content="Hi! I'm Ruikang Lin. Click to learn more about me, my projects, and my achievements.">
     <!-- tailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet">
     <!-- Google Font: Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="./resources/styles/oswald.css" rel="stylesheet">
+    <!-- Custom CSS Override-->
     <link href="./resources/styles/index.css" rel="stylesheet">
 </head>
 
 <body class="w-screen h-screen bg-[#FCF6F5FF] overflow-x-hidden overflow-y-auto">
     <div class="absolute left-0 top-0 w-1/3 md:w-2/5 h-screen bg-[#89ABE3FF] -z-10"></div>
-    <div class="w-full h-full flex justify-center content-center">
+    <div class="max-w-full h-full flex justify-center content-center">
         <div class="grid grid-cols-2 gap-4 md:gap-6 items-center">
-            <div id="profile_card" class="max-w-none md:max-w-sm h-fit bg-white border border-gray-200 rounded-r-lg md:rounded-lg shadow text-center">
-                <img id="profile_pic" class="rounded-full w-2/3 mx-auto mt-4 md:mt-12 bg-gradient-to-tr from-[#89ABE3FF] to-white"
+            <div id="profile_card"
+                class="max-w-none md:max-w-sm h-fit bg-white border border-gray-200 rounded-r-lg md:rounded-lg shadow text-center">
+                <img id="profile_pic"
+                    class="rounded-full w-2/3 mx-auto mt-4 md:mt-12 bg-gradient-to-tr from-[#89ABE3FF] to-white drop-shadow-lg"
                     src="./resources/images/profile-clean.png" alt="Profile Picture" />
                 <div class="p-2 md:p-5">
                     <h5 class="text-2xl md:text-4xl font-bold tracking-wide text-gray-900">Ruikang</h5>
@@ -42,10 +49,12 @@
                     <div class="my-4 w-full flex justify-center">
                         <div class="border-b-8 border-[#89ABE3FF] w-1/3 md:w-1/6"></div>
                     </div>
-                    <p class="text-lg md:text-2xl font-normal tracking-wide text-gray-700 underline-offset-2">CS & ITWS <a href="https://www.rpi.edu/" class="hover:underline"><b>@ RPI</b></a></p>
+                    <p class="text-lg md:text-2xl font-normal tracking-wide text-gray-700 underline-offset-2">CS & ITWS
+                        <a href="https://www.rpi.edu/" class="hover:underline"><b>@ RPI</b></a>
+                    </p>
                 </div>
                 <div class="mb-4 md:mb-6">
-                    <button type="button" onclick="location.href='https://github.com/RuikangRPI';"
+                    <button type="button" onclick="window.open('https://github.com/RuikangRPI');"
                         class="me-2 transition-all text-white bg-[#24292F] hover:bg-[#24292F]/90 shadow-md shadow-[#24292F]/50 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
@@ -54,7 +63,7 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </button>
-                    <button type="button" onclick="location.href='https://www.linkedin.com/in/ruikanglin/';"
+                    <button type="button" onclick="window.open('https://www.linkedin.com/in/ruikanglin/');"
                         class="transition-all text-white bg-[#0077B5] hover:bg-[#0077B5]/90 shadow-md shadow-[#0077B5]/50 focus:ring-4 focus:outline-none focus:ring-[#0077B5]/50 font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
                         <svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
@@ -63,41 +72,180 @@
                     </button>
                 </div>
             </div>
-            <div class="h-screen md:h-auto overflow-y-auto items-center">
-                <h1 class="text-3xl md:text-6xl font-extrabold tracking-wide md:tracking-widest text-gray-900 mt-24 md:m-0">Hi!</h1>
+            <div class="md:h-auto overflow-y-auto items-center">
+                <h1
+                    class="text-5xl md:text-6xl font-extrabold tracking-wide md:tracking-widest text-gray-900 mt-24 md:m-0">
+                    Hi!</h1>
                 <h2 class="text-3xl md:text-5xl font-bold tracking-normal text-gray-900">I'm Ruikang.</h2>
-                <h3 class="max-w-sm text-lg md:text-2xl font-normal tracking-normal text-gray-900 my-2 md:my-6">I'm a Full-Stack Developer and an Open Source Software Contributor.</h3>
-                <div class="mb-6 ml-4 hidden md:block">
-                    <button type="button"
-                        class="px-4 py-2.5 md:px-7 md:py-4 me-2 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm text-center">
-                        Portfolio
+                <h3 class="max-w-sm text-md md:text-2xl font-normal tracking-normal text-gray-900 my-2 md:my-6">A
+                    Full-Stack Developer and an Open Source Software Contributor.</h3>
+                <div class="flex flex-col md:flex-row mb-24 sm:mb-6 ml-0 md:ml-4 mr-8 md:mr-0 gap-2 md:gap-6">
+                    <button type="button" id="view_work_btn"
+                        class="px-4 py-2.5 md:px-7 md:py-4 bg-[#3036c6] hover:bg-blue-800 font-medium rounded-full text-[#FCF6F5FF] text-sm text-center drop-shadow-lg"
+                        onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });">
+                        VIEW MY WORK
                     </button>
                     <button type="button"
-                        class="px-4 py-2.5 md:px-7 md:py-4 ml-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
-                        Stats
+                        class="px-4 py-2.5 md:px-7 md:py-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 drop-shadow-lg"
+                        onclick="document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });">
+                        RESUME
                     </button>
                 </div>
-                <div class="max-w-sm animate-pulse me-2">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nulla eget justo scelerisque malesuada vel nec eros.</p>
-                    <p>Maecenas varius, nisl eu eleifend luctus, purus nisl convallis dui, non aliquam ante elit at tortor.</p>
+                <div class="max-w-full md:max-w-sm animate-pulse me-2 hidden sm:block">
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nulla eget justo
+                        scelerisque malesuada vel nec eros.</p>
+                    <p>Maecenas varius, nisl eu eleifend luctus, purus nisl convallis dui, non aliquam ante elit at
+                        tortor.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-full h-full flex justify-center content-center">
-        Resume
+
+    <div id="resume" class="max-w-full p-2 sm:p-6 md:p-12">
+        <div class="md:flex md:flex-col md:items-center mb-6 md:mb-12">
+            <h1 class="oswald text-[#89ABE3FF] font-normal mb-3">RESUME</h1>
+            <h2 class="oswald font-bold text-5xl">MY RESUME</h2>
+        </div>
+
+        <div class="flex justify-center mb-6 md:mb-12 border-gray-200">
+            <div class="relative flex flex-row -mb-px text-[8px] md:text-sm text-nowrap font-medium tracking-wide rounded-full bg-slate-200 shadow-md"
+                id="resume_tabs">
+                <span id="tab_indicator"
+                    class="absolute top-0 left-0 rounded-full h-full border-2 md:border-4 border-slate-200 overflow-hidden transition-all duration-300"></span>
+                <button class="tab_btn inline-block w-full p-3 md:p-5 z-10 rounded-s-full" type="button"
+                    aria-controls="about_panel"><span>ABOUT ME</span></button>
+                <button class="tab_btn inline-block w-full p-3 md:p-5 z-10" type="button"
+                    aria-controls="experience_panel">EXPERIENCE</button>
+                <button class="tab_btn inline-block w-full p-3 md:p-5 z-10" type="button"
+                    aria-controls="education_panel">EDUCATION</button>
+                <button class="tab_btn inline-block w-full p-3 md:p-5 z-10" type="button"
+                    aria-controls="skills_panel">SKILLS</button>
+                <button class="tab_btn inline-block w-full p-3 md:p-5 z-10 rounded-e-full" type="button"
+                    aria-controls="statistics_panel">STATISTICS</button>
+            </div>
+        </div>
+        <div id="resume_tab_panels" class="bg-[#E9BF97] p-2 rounded-lg">
+            <div id="about_panel" class="tab_panel p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                        class="font-medium text-gray-800 dark:text-white">about tab's associated content</strong>.
+                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+                    classes to control the content visibility and styling.</p>
+            </div>
+            <div id="experience_panel" class="tab_panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                        class="font-medium text-gray-800 dark:text-white">experience tab's associated content</strong>.
+                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+                    classes to control the content visibility and styling.</p>
+            </div>
+            <div id="education_panel" class="tab_panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                        class="font-medium text-gray-800 dark:text-white">education tab's associated content</strong>.
+                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+                    classes to control the content visibility and styling.</p>
+            </div>
+            <div id="skills_panel" class="tab_panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                        class="font-medium text-gray-800 dark:text-white">skills tab's associated content</strong>.
+                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+                    classes to control the content visibility and styling.</p>
+            </div>
+            <div id="statistics_panel" class="tab_panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                        class="font-medium text-gray-800 dark:text-white">stats tab's associated content</strong>.
+                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+                    classes to control the content visibility and styling.</p>
+            </div>
+        </div>
     </div>
-    <div class="w-full h-full flex justify-center content-center">
-        Portfolio
+
+    <div id="portfolio" class="max-w-full">
+        <h1 class="text-[#89ABE3FF] font-medium">PORTFOLIO</h1>
+        <div class="m-12">
+            <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+                <button type="button"
+                    class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">
+                    View All
+                </button>
+                <button type="button"
+                    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">
+                    Web Dev
+                </button>
+                <button type="button"
+                    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">
+                    Application
+                </button>
+                <button type="button"
+                    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">
+                    Research
+                </button>
+                <button type="button"
+                    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">
+                    Other
+                </button>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-full h-full flex justify-center content-center">
-        Expertise
+
+    <div id="expertise" class="max-w-full">
+        <h1 class="text-[#89ABE3FF] font-medium">EXPERTISE</h1>
     </div>
 
     <!-- flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Custom Javascript-->
+    <script src="./resources/scripts/index.js"></script>
     <script>
-        document.title = "Welcome";
+        document.title = "Welcome - Ruikang's Portfolio Website";
     </script>
 </body>
 
